@@ -4,12 +4,12 @@ require_once('./assets/version.php');
 $x = new stdClass();
 $x->cli_version = CLI_VERSION . ": " . CLI_CODENAME;
 $x->binary_url = "https://getamitycoin.org/assets/";
-$x->windows = "amity-" . CLI_VERSION . "_windows-x64.zip";
-$x->linux = "amity-" . CLI_VERSION . "_linux-x64.zip";
-$x->mac = "amity-" . CLI_VERSION . "_osx-x64.zip";
-$x->armhf = "amity-" . CLI_VERSION . "_armhf.zip";
-$x->aarch64 = "amity-" . CLI_VERSION . "_aarch64.zip";
-$x->risc = "amity-" . CLI_VERSION . "_riscv64.zip";
+$x->windows = "Amity-v." . CLI_VERSION . "-WIN64.zip";
+$x->linux = "Amity-v" . CLI_VERSION . "-LINUX64.zip";
+$x->mac = "Amity-v" . CLI_VERSION . "-MACOS64.zip";
+$x->armhf = "Amity-v" . CLI_VERSION . "-ARMHF.zip";
+$x->aarch64 = "Amity-v" . CLI_VERSION . "-ARM64.zip";
+$x->risc = "Amity-v" . CLI_VERSION . "-RISCV64.zip";
 
 echo json_encode($x, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 ?>
